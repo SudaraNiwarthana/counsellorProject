@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './signup.css';
+import './SignUp.css';
 import signup from '../assets/122.jpg'
 
 
