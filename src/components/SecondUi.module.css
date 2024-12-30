@@ -1,0 +1,137 @@
+/* Make the container and heroSection full-width */
+.container {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin-top: 25rem;
+  }
+  
+  .heroSection {
+    position: relative;
+    width: 100vw; /* Full viewport width */
+    overflow: hidden;
+  }
+  
+  .heroImage {
+    width: 100vw; /* Full viewport width */
+    display: block;
+    
+  }
+  
+  .heroBgImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .statsContainer {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw; 
+    position: absolute; 
+    top: 40rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    gap: 10px;
+    border-radius: 12px;
+    z-index: 1;
+    
+    
+  }
+  
+  .statCard {
+    flex: 1;
+    background-color: rgba(114, 114, 114, 0.5);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid #000; 
+    max-width: 180px;
+  }
+  
+  .statCard h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+  
+  .statNumber {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .projectsSection {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100vw; /* Full viewport width */
+  }
+  
+  .projectsSection h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .projectsTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .projectsTable th,
+  .projectsTable td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .projectsTable th {
+    font-weight: bold;
+    color: #666;
+    background: #f9f9f9;
+  }
+  
+  .statusBadge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .statusBadge.completed {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .statusBadge.pending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .statsContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projectsTable {
+      overflow-x: auto;
+      display: block;
+    }
+  }
+  

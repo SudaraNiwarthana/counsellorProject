@@ -1,0 +1,115 @@
+/* Centered container layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto; /* Centers container horizontally */
+    max-width: 1200px; /* Limits the width of the layout */
+    padding: 40px; /* Adds padding around the container */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Optional: background color */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    border-radius: 8px;
+  }
+  
+  /* Centering the entire container within the viewport */
+  body, html {
+    display: flex;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #ececec; /* Background for the entire page */
+  }
+  
+  .formSection {
+    width: 60%;
+    padding-right: 20px;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .highlight {
+    color: #f39c12;
+    font-weight: bold;
+  }
+  
+  form label {
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .nameFields,
+  .phoneFields,
+  .timeFields {
+    display: flex;
+    gap: 10px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  textarea {
+    height: 60px;
+    resize: none;
+  }
+  
+  .bookButton {
+    background-color: #2ecc71;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contactSection {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-left: 1px solid #ccc;
+    padding-left: 20px;
+  }
+  
+  .profilePic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .contactInfo,
+  .workingHours,
+  .officeLocation {
+    margin-top: 20px;
+  }
+  
+  .jobTitle {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .name {
+    font-size: 1.1rem;
+    margin-top: -5px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  

@@ -1,0 +1,128 @@
+/* ProfessionalGuidance.module.css */
+
+/* Container styling for full-width layout */
+.container {
+    width: 100vw;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    margin-top: 5rem;
+  }
+  
+  /* Hero section */
+  .heroSection {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .heroImage {
+    width: 100vw;
+    margin-top: 50rem;
+    object-fit: cover;
+    
+  }
+  
+  .heroOverlay {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    color: white;
+  }
+  
+  .heroOverlay h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    font-weight: normal;
+    font-size: 3rem;
+  }
+  
+  .mainTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  /* Identify section */
+  .identifySection {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .identifyButton {
+    background-color: #2ecc71;
+    color: white;
+    font-size: 2.5rem;
+    padding: 10px 150px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  /* Services container with 2-row, 3-column layout */
+  .servicesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-left: 150px;
+  }
+  
+  .serviceBox {
+    background-color: #ffffff;
+    border: 2px solid #9b9b9b;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 30px;
+    width: 250px;
+    height: 250px;
+
+    text-align: center;
+  }
+  
+  .serviceText {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .serviceImage {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+    align-items: center;
+    border-radius: 50px;
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .heroOverlay h1 {
+      font-size: 1.8rem;
+    }
+  
+    .mainTitle {
+      font-size: 2rem;
+    }
+  
+    .identifyButton {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .servicesContainer {
+      grid-template-columns: repeat(2, 1fr); /* Adjust to 2 columns on smaller screens */
+    }
+  }
+  

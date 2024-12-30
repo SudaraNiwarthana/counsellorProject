@@ -1,0 +1,226 @@
+/* Basic Layout */
+body, html {
+    margin-top: 1rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .min-h-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .logo h1 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .text-green {
+    color: #10b981;
+  }
+  
+  .nav-links a, .login-btn, .signup-btn {
+    margin: 0 0.5rem;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .signup-btn {
+    background-color: #10b981;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+  }
+  
+  .signup-btn:hover, .login-btn:hover, .nav-links a:hover {
+    color: #333;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+   
+    padding: 2rem;
+    background-color: #f9fafb;
+   
+  }
+  
+  .hero-text h2 {
+    font-size: 2.5rem;
+    color: #333;
+    
+
+  }
+  
+  .highlight {
+    color: #fb7185;
+  }
+  
+  .search-bar {
+    display: flex;
+    margin-top: 1rem;
+    text-align: right;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  
+  .search-btn {
+    padding: 0.5rem 1rem;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+  }
+  
+  .popular-tags span {
+    color: #666;
+    margin-right: 0.5rem;
+  }
+  
+  /* How It Works */
+  .how-it-works {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .stepa {
+    background-color: #c43782;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  .stepb {
+    background-color: #e3ea1bbe;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  .stepc {
+    background-color: #3c894e;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .icon {
+    color: #10b981;
+    margin-bottom: 1rem;
+  }
+  
+  /* Get Started */
+  .get-started {
+    padding: 2rem;
+    background-color: #f9fafb;
+    text-align: center;
+  }
+  
+  .get-started-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 1rem;
+    background-color: #f5eded;
+    border-top: 1px solid #e0e0e0;
+    width: 1500px;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-logo h1 {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .footer-logo p {
+    color: #666;
+  }
+  
+  .footer-links a {
+    margin-right: 1rem;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .footer-socials {
+    color: #666;
+    text-decoration: none;
+    margin-right: 2rem;
+    margin-left: 10re;
+  }
+  
+  .footer-socials .social-icon:hover,
+  .footer-links a:hover {
+    color: #333;
+  }
+  
+ .footer-socials {
+    display: flex;           /* Aligns children in a row */
+    justify-content: center; /* Centers the icons horizontally */
+    gap: 10px;               /* Space between icons */
+}
+
+.icon {
+    color: #333;             /* Customize icon color */
+    cursor: pointer;
+    transition: color 0.3s;  /* Smooth color transition on hover */
+}
+
+.icon:hover {
+    color: #0073e6;          /* Change color on hover */
+}
+
+.hero-image{
+  
+    width: 10px;          /* Set width */
+    height: 10px;         /* Set height */
+    object-fit: none;     /* Optional: crop image to fit dimensions */
+
+
+}
+
+.girl{
+    display: block;
+    margin-right: auto;
+}
+
+.girl {
+  display: flex;
+  justify-content: flex-end;
+}
+.girl img {
+  margin-top: 50px;
+  width: 100%; /* Adjust the width as needed */
+  max-width: 400px; 
+  max-height: 400px;/* Set a maximum width if needed */
+}

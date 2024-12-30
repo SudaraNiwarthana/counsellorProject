@@ -1,0 +1,158 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #4b5563;
+  }
+  
+  .nav a:hover {
+    color: #059669;
+  }
+  
+  .search-container {
+    position: relative;
+  }
+  
+  .search-input {
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e5e5;
+    background-color: #f3f4f6;
+  }
+  
+  /* Banner styles */
+  .banner {
+    position: relative;
+    height: 16rem;
+    background: linear-gradient(to right, #1e3a8a, #7e22ce);
+    overflow: hidden;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  
+  /* Service title card styles */
+  .service-title-card {
+    background-color: white;
+    margin: -1.5rem 1rem 0;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .stars {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .star-red { color: #ef4444; }
+  .star-yellow { color: #f59e0b; }
+  .star-green { color: #10b981; }
+  
+  /* Service listing styles */
+  .service-list {
+    padding: 1rem;
+  }
+  
+  .service-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .provider-info {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .provider-avatar {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  
+  .service-details {
+    max-width: 36rem;
+  }
+  
+  .service-title {
+    font-weight: 600;
+  }
+  
+  .provider-name {
+    color: #6b7280;
+  }
+  
+  .service-description {
+    font-size: 0.875rem;
+    color: #4b5563;
+    margin-top: 0.5rem;
+  }
+  
+  .price-call-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .price {
+    font-weight: 700;
+  }
+  
+  .request-call-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #10b981;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .request-call-btn:hover {
+    background-color: #059669;
+  } 
